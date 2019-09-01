@@ -47,9 +47,23 @@ export class AppModule {}
     </gto-lvl-circle>
 ```
 
+### Properties
+
+| Property | Type | Default |
+| :---: | :---: | :---: |
+| circles | number | 3 |
+
+| circles | number | 3 |
+| colors | string[] | [''white'',''white'','white'] |
+| width | number | 120 |
+| height | number | 120 |
+| percent | number | 0 |
+| stroke | number | 0 |
+| shadowColor | string | gray |
+
 ## LIVE DEMO
 
-[stackblitz](https://stackblitz.com/edit/angular-gto-lvl-circle)
+[Demo on Stackblitz](https://stackblitz.com/edit/angular-gto-lvl-circle)
 
 ## Authors
 
