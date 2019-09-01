@@ -52,7 +52,6 @@ export class AppModule {}
 | Property | Type | Default |
 | :---: | :---: | :---: |
 | circles | number | 3 |
-
 | circles | number | 3 |
 | colors | string[] | [''white'',''white'','white'] |
 | width | number | 120 |
