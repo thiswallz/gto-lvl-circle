@@ -52,12 +52,11 @@ export class AppModule {}
 | Property | Type | Default |
 | :---: | :---: | :---: |
 | circles | number | 3 |
-| circles | number | 3 |
 | colors | string[] | [''white'',''white'','white'] |
 | width | number | 120 |
 | height | number | 120 |
 | percent | number | 0 |
-| stroke | number | 0 |
+| stroke | number | 4 |
 | shadowColor | string | gray |
 
 ## LIVE DEMO
