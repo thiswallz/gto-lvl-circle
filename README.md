@@ -1,27 +1,60 @@
-# LevelCircle
+# gto-lvl-circle
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+[![npm version](https://img.shields.io/npm/v/@gto/lvl-circle.svg?style=flat-square)](https://www.npmjs.com/package/@gto/lvl-circle)
+[![npm downloads](https://img.shields.io/npm/dm/@gto/lvl-circle.svg?style=flat)](https://www.npmjs.com/package/@gto/lvl-circle)
+[![dependency status](https://david-dm.org/thiswallz/@gto/lvl-circle.svg)](https://david-dm.org/thiswallz/ngx-skill-bar)
 
-## Development server
+Beautiful and simple skill/progress circles.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+You do not need any dependencies. It works with Angular x.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### Examples
 
-## Build
+![Alt text](https://raw.githubusercontent.com/thiswallz/gto-lvl-circle/master/demos.png?raw=true 'Demos')
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Quick Start
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Install
 
-## Running end-to-end tests
+```bash
+npm i --save @gto/lvl-circle
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+### Import the module
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```ts
+// app.module.ts...
+import { GtoLvlCircleComponent } from '@gto/lvl-circle';
+// ...
+@NgModule({
+  imports: [
+    //...
+    GtoLvlCircleComponent
+  ],
+})
+export class AppModule {}
+```
+
+### Use it!
+
+```html
+    <input [(ngModel)]="percentage"  type="number" />
+    <gto-lvl-circle shadowColor="#323232" [colors]="['#e46fab', '#e046a5', '#e4408a']" 
+        [percent]="percentage">
+    </gto-lvl-circle>
+```
+
+## LIVE DEMO
+
+[stackblitz](https://stackblitz.com/edit/angular-gto-lvl-circle)
+
+## Authors
+
+- **Mauricio Joost Wolff** - _Initial work_ - [GitHub](https://github.com/thiswallz)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

@@ -1,0 +1,43 @@
+$bg: #1e1e1e;
+$color-default: white;
+$container-w: 200px;
+
+:host{
+  margin: 200px;
+}
+.examples{
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  row-gap: 20px;
+  .range{
+    position: absolute;
+    bottom: 5px;
+  }
+}
+.bfbox-container{
+  position: relative;
+  margin:0 auto;
+  justify-content: center;
+  width: $container-w;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: $bg;
+  color: $color-default;
+  height: $container-w;
+  border-radius: 4%;
+  z-index: 100;
+  .bfbox-title{
+    top: 5px;
+    color: $color-default;
+    position: absolute;
+    font-size: 20px;
+  }
+  .bfbox-footer{
+    bottom: 5px;
+    color: $color-default;
+    position: absolute;
+    font-size: 30px;
+  }
+
+}

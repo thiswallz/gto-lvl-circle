@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "gto-lvl-circle": {
+      "projectType": "library",
+      "root": "projects/gto-lvl-circle",
+      "sourceRoot": "projects/gto-lvl-circle/src",
+      "prefix": "gto-lvl-circle",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/gto-lvl-circle/tsconfig.lib.json",
+            "project": "projects/gto-lvl-circle/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/gto-lvl-circle/src/test.ts",
+            "tsConfig": "projects/gto-lvl-circle/tsconfig.spec.json",
+            "karmaConfig": "projects/gto-lvl-circle/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/gto-lvl-circle/tsconfig.lib.json",
+              "projects/gto-lvl-circle/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "level-circle"
 }

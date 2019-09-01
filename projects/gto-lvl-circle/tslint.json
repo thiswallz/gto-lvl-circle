@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "gtoLvlCircle",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "gto-lvl-circle",
+      "kebab-case"
+    ]
+  }
+}

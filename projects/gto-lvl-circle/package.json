@@ -1,0 +1,29 @@
+{
+  "name": "@gto/lvl-circle",
+  "version": "0.0.1",
+  "description": "A clean way to show skill and progress circles for angular.",
+  "keywords": [
+    "angular 6",
+    "angular 7",
+    "angular 8",
+    "bar",
+    "progress circle",
+    "skill circle",
+    "progress",
+    "progress bar circle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiswallz/gto-lvl-circle.git"
+  },
+  "author": "Mauricio Joost Wolff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thiswallz/gto-lvl-circle/issues"
+  },
+  "homepage": "https://github.com/thiswallz/gto-lvl-circle#readme",
+  "peerDependencies": {
+    "@angular/common": ">6.0.0",
+    "@angular/core": ">6.0.0"
+  }
+}

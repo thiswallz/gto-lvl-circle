@@ -1,20 +1,169 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    Posibilities
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+  <img width="30" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<h2>Using gto-lvl-circle and elements: </h2>
+
+<div class="examples">
+    <div class="bfbox-container">
+      <div class="bfbox-title">Default</div>
+      <gto-lvl-circle>
+      </gto-lvl-circle>
+    </div>      
+    <div class="bfbox-container">
+      <div class="bfbox-title">Some icons</div>
+      <div class="bfbox-footer">
+        <i class="material-icons complete">star</i>
+        <i class="material-icons complete">star</i>
+        <i class="material-icons">star</i>
+      </div>
+      <gto-lvl-circle>
+        <div class="circle-icons">
+          <i class="material-icons">emoji_events</i>
+          <i class="material-icons over">directions_car</i>
+        </div>
+      </gto-lvl-circle>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title">Smaller</div>
+      <gto-lvl-circle width="60px" height="60px">
+      </gto-lvl-circle>
+    </div>      
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Bigger</div>
+      <gto-lvl-circle width="150px" height="150px" style="margin-top:30px;">
+      </gto-lvl-circle>
+    </div>   
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Percentage 100%</div>
+      <gto-lvl-circle percent="100">
+      </gto-lvl-circle>
+    </div>     
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Colors (100%)</div>
+      <gto-lvl-circle shadowColor="#323232" [colors]="['rgba(255, 61, 0, 0.55)', 'rgba(255, 61, 0, 0.85)', '#ff3d00']" percent="100">
+      </gto-lvl-circle>
+    </div>   
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Colors (50%)</div>
+      <gto-lvl-circle shadowColor="#323232" [colors]="['#8accec', '#61c3f3', '#31bcff']" percent="50">
+      </gto-lvl-circle>
+    </div>     
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Colors (10%)</div>
+      <gto-lvl-circle shadowColor="#323232" [colors]="['#eaa675', '#ec883e', '#f17c3a']" percent="10">
+      </gto-lvl-circle>
+    </div>   
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Colors (99%)</div>
+      <gto-lvl-circle shadowColor="#323232" [colors]="['#a8da88', '#7dc45f', '#73f440']" percent="99">
+      </gto-lvl-circle>
+    </div>   
+    <div class="bfbox-container">
+      <div class="bfbox-title"> Colors Dynamic : {{percentage}}</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['#e46fab', '#e046a5', '#e4408a']" [percent]="percentage">
+        </gto-lvl-circle>
+      </div>
+      <div class="range">
+          <input type="range"  name="percentage" [(ngModel)]="percentage"
+          style="width: 70px;"
+          min="0" max="100">
+      </div>
+    </div>    
+    <div class="bfbox-container">
+      <div class="bfbox-title">Combining</div>
+      <div class="bfbox-footer">
+        <i class="material-icons complete" style="color:#f96117">star</i>
+        <i class="material-icons complete" style="color:#f96117">star</i>
+        <i class="material-icons" style="color:#323232">star</i>
+      </div>
+      <gto-lvl-circle shadowColor="#323232" [colors]="['#c77f4f', '#e6702c', '#f96117']" percent="99">
+        <div class="circle-icons">
+          <i class="material-icons" style="color:#f96117">waves</i>
+          <i class="material-icons over " style="color:#fff">airplanemode_active</i>
+        </div>
+      </gto-lvl-circle>
+    </div> 
+    <div class="bfbox-container">
+      <div class="bfbox-title"> 1 Circle (80%)</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['#ff3d00']" percent="80" circles="1">
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title"> 2 Circles (80%)</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['rgba(255, 61, 0, 0.55)', 'rgba(255, 61, 0, 0.85)', '#ff3d00']" percent="80" circles="2">
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title"> 3 Circles (80%)</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['rgba(255, 61, 0, 0.55)', 'rgba(255, 61, 0, 0.85)', '#ff3d00']" percent="80" circles="3">
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title"> 4 Circles (80%)</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['rgba(255, 61, 0, 0.55)', 'rgba(255, 61, 0, 0.85)', '#ff3d00']" percent="80" circles="4">
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title" style="font-size:13px"> 1 Circle (80%) - Stroke 10</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['#4effab']" percent="80" circles="1" stroke="10">
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title" style="font-size:13px"> 1 Circle (80%) - Stroke 1</div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['#4effab']" percent="80" circles="1" stroke="1">
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title" style="font-size:13px"> 1 Circle (80%) </div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['#4effab']" percent="80" circles="1" >
+          <div class="circle-icons">
+            <i class="material-icons" style="color:#4effab">emoji_events</i>
+          </div>
+          <div class="circle-text" style="color:#4effab">36 Exp</div>
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+      <div class="bfbox-title" style="font-size:13px"> 1 Circle (80%) </div>
+      <div>
+        <gto-lvl-circle shadowColor="#323232" [colors]="['#4effab']" percent="80" circles="1" >
+          <div class="circle-icons">
+            <i class="material-icons" style="color:#4effab">emoji_events</i>
+            <i class="material-icons over " style="color:yellow">star</i>
+          </div>
+          <div class="circle-text" style="color:#4effab">36 Exp</div>
+        </gto-lvl-circle>
+      </div>
+    </div>
+    <div class="bfbox-container">
+        <div class="bfbox-title" style="font-size:13px"> 1 Circle (80%) Big </div>
+        <div style="margin-top:20px">
+          <gto-lvl-circle width="155" height="155" shadowColor="#323232" [colors]="['#4effab']" percent="80" circles="1" >
+            <div class="circle-icons" style="top: 60px;left: 55px;">
+              <i class="material-icons" style="color:#4effab">emoji_events</i>
+              <i class="material-icons over " style="color:yellow">star</i>
+            </div>
+            <div class="circle-text" style="color:#4effab">36 Exp</div>
+          </gto-lvl-circle>
+        </div>
+      </div>
+</div>
 

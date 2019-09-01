@@ -1,0 +1,25 @@
+:host{
+    position:relative;
+    display: inline-block;
+}
+::ng-deep.circle-icons{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    .circle-text{
+
+    }
+    i{
+      position: absolute;
+      font-size: 2.5em;
+      top: 0px;
+      left:0px;
+      &.over{
+        position: absolute;
+        right: 0px;
+        top: 1em;
+        text-shadow: 0 0 5px black;
+        font-size: 1.5em;
+      }
+    }
+  }
