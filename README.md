@@ -63,6 +63,12 @@ export class AppModule {}
 
 [Demo on Stackblitz](https://stackblitz.com/edit/angular-gto-lvl-circle)
 
+
+### Vanilla JS (not angular)
+
+[CodePin](https://codepen.io/thiswallz/pen/KKPmNjw)
+
+
 ## Authors
 
 - **Mauricio Joost Wolff** - _Initial work_ - [GitHub](https://github.com/thiswallz)
