@@ -83,7 +83,6 @@ export class GtoLvlCircleComponent implements OnInit, OnChanges,  AfterViewInit 
   }
 
   calculateCircle(percent: number){
-    console.log(percent)
     let total = (percent * (100 * this.circles))/100;
     for( var i = 0; i < this.circles; i++ ){
       var circle = <SVGCircleElement> this.lvlCircle.nativeElement.querySelector('.circle-'+i);    
