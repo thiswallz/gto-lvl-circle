@@ -1,24 +1,78 @@
-# GtoLvlCircle
+# gto-lvl-circle
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
+[![npm version](https://img.shields.io/npm/v/@gto/lvl-circle.svg?style=flat-square)](https://www.npmjs.com/package/@gto/lvl-circle)
+[![npm downloads](https://img.shields.io/npm/dm/@gto/lvl-circle.svg?style=flat)](https://www.npmjs.com/package/@gto/lvl-circle)
+[![dependency status](https://david-dm.org/thiswallz/@gto/lvl-circle.svg)](https://david-dm.org/thiswallz/ngx-skill-bar)
 
-## Code scaffolding
+Beautiful and simple skill/progress circles.
 
-Run `ng generate component component-name --project gto-lvl-circle` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project gto-lvl-circle`.
-> Note: Don't forget to add `--project gto-lvl-circle` or else it will be added to the default project in your `angular.json` file. 
 
-## Build
+You do not need any dependencies. It works with Angular x.
 
-Run `ng build gto-lvl-circle` to build the project. The build artifacts will be stored in the `dist/` directory.
+#### Examples
 
-## Publishing
+![Alt text](https://raw.githubusercontent.com/thiswallz/gto-lvl-circle/master/demos.png?raw=true 'Demos')
 
-After building your library with `ng build gto-lvl-circle`, go to the dist folder `cd dist/gto-lvl-circle` and run `npm publish`.
 
-## Running unit tests
+## Quick Start
 
-Run `ng test gto-lvl-circle` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Install
 
-## Further help
+```bash
+npm i --save @gto/lvl-circle
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+### Import the module
+
+```ts
+// app.module.ts...
+import { GtoLvlCircleComponent } from '@gto/lvl-circle';
+// ...
+@NgModule({
+  imports: [
+    //...
+    GtoLvlCircleComponent
+  ],
+})
+export class AppModule {}
+```
+
+### Use it!
+
+```html
+    <input [(ngModel)]="percentage"  type="number" />
+    <gto-lvl-circle shadowColor="#323232" [colors]="['#e46fab', '#e046a5', '#e4408a']" 
+        [percent]="percentage">
+    </gto-lvl-circle>
+```
+
+### Properties
+
+| Property | Type | Default |
+| :---: | :---: | :---: |
+| circles | number | 3 |
+| colors | string[] | [''white'',''white'','white'] |
+| width | number | 120 |
+| height | number | 120 |
+| percent | number | 0 |
+| stroke | number | 4 |
+| shadowColor | string | gray |
+
+## LIVE DEMO
+
+[Demo on Stackblitz](https://stackblitz.com/edit/angular-gto-lvl-circle)
+
+
+### Vanilla JS (not angular)
+
+[CodePin](https://codepen.io/thiswallz/pen/KKPmNjw)
+
+
+## Authors
+
+- **Mauricio Joost Wolff** - _Initial work_ - [GitHub](https://github.com/thiswallz)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
