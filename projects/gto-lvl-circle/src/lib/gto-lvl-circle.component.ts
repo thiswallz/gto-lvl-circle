@@ -46,7 +46,7 @@ export class GtoLvlCircleComponent implements OnInit, OnChanges,  AfterViewInit 
       this.lvlCircle.nativeElement.appendChild(shadowCircle);
       this.lvlCircle.nativeElement.appendChild(circle);
     }
-    for( var i = 0; i < this.circles; i++ ){
+    for( let i = 0; i < this.circles; i++ ){
       const circle = this.lvlCircle.nativeElement.querySelector('.circle-'+i);
       const radius = circle.r.baseVal.value;
       const circumference = radius * 2 * Math.PI;
@@ -84,7 +84,7 @@ export class GtoLvlCircleComponent implements OnInit, OnChanges,  AfterViewInit 
 
   calculateCircle(percent: number){
     let total = (percent * (100 * this.circles))/100;
-    for( var i = 0; i < this.circles; i++ ){
+    for( let i = 0; i < this.circles; i++ ){
       const circle = <SVGCircleElement> this.lvlCircle.nativeElement.querySelector('.circle-'+i);    
       const radius = circle.r.baseVal.value;
       const circumference = radius * 2 * Math.PI;
