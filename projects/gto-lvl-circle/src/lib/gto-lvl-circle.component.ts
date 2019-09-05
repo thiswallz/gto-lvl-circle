@@ -47,9 +47,9 @@ export class GtoLvlCircleComponent implements OnInit, OnChanges,  AfterViewInit 
       this.lvlCircle.nativeElement.appendChild(circle);
     }
     for( var i = 0; i < this.circles; i++ ){
-      var circle = this.lvlCircle.nativeElement.querySelector('.circle-'+i);
-      var radius = circle.r.baseVal.value;
-      var circumference = radius * 2 * Math.PI;
+      const circle = this.lvlCircle.nativeElement.querySelector('.circle-'+i);
+      const radius = circle.r.baseVal.value;
+      const circumference = radius * 2 * Math.PI;
       circle.style.strokeDasharray = circumference;
       circle.style.strokeDashoffset = circumference;
     }
@@ -68,7 +68,7 @@ export class GtoLvlCircleComponent implements OnInit, OnChanges,  AfterViewInit 
   }
 
   createCircleElement(klass: string, index: number, color: string = undefined){
-    var circle = this.renderer.createElement('circle', "http://www.w3.org/2000/svg"); 
+    const circle = this.renderer.createElement('circle', "http://www.w3.org/2000/svg"); 
     circle.setAttribute("stroke", color ? color: this.colors[index]);
     circle.setAttribute("stroke-width", this.stroke ? this.stroke : "4");
     circle.setAttribute("fill","transparent");
@@ -85,9 +85,9 @@ export class GtoLvlCircleComponent implements OnInit, OnChanges,  AfterViewInit 
   calculateCircle(percent: number){
     let total = (percent * (100 * this.circles))/100;
     for( var i = 0; i < this.circles; i++ ){
-      var circle = <SVGCircleElement> this.lvlCircle.nativeElement.querySelector('.circle-'+i);    
-      var radius = circle.r.baseVal.value;
-      var circumference = radius * 2 * Math.PI;
+      const circle = <SVGCircleElement> this.lvlCircle.nativeElement.querySelector('.circle-'+i);    
+      const radius = circle.r.baseVal.value;
+      const circumference = radius * 2 * Math.PI;
       if(total<=0){
         this.setProgress(circle, 0, circumference); 
         continue;
