@@ -71,7 +71,7 @@ export class AppModule {}
 
 ## Authors
 
-- **Mauricio Joost Wolff** - _Initial work_ - [GitHub](https://github.com/thiswallz)
+- **M Joost Wolff** - _Initial work_ - [GitHub](https://github.com/thiswallz)
 
 ## License
 
